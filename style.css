@@ -1,0 +1,462 @@
+@charset "utf-8"
+/* CSS Document*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #161616;  
+    font-family: 'Poppins', sans-serif; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: 'Poppins', sans-serif !important; 
+    
+}
+h1{
+    font-size: 45px;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+.toggle{
+    display: none;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #edf1fd;
+    position: relative;
+    background: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 1920px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: calibri;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+    z-index: 1;
+}
+
+.menu{
+    display: flex;
+}
+.menu li a{
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+.lang{
+    color: #292929;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color:#292929;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu li a:hover, 
+.menu li a .active{
+        background-color:#292929;
+        color: #fff;
+        font-weight: 700;
+        transition: all ease 0.4s;
+    
+}
+.name{
+
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    transform: translate(-20%, 50%);
+}
+
+.name p:nth-child(1), 
+.name .details{
+    color: #6c707c;
+    font-size: 16px;
+}
+.cv-btn {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    border: 2px solid #292929;
+    color: #fff;
+}
+.cv-btn:hover{
+    background-color: transparent;
+    border: 2px solid #292929;
+    color:#292929; 
+    transition: all ease 0.5s;
+}
+
+/*Social Links*/
+.social{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+}
+.social a{
+    margin: 6px 12px;   
+}
+.social i{
+    color: rgba(18, 17, 17, 0.4);
+}
+.social a:hover i{
+    color: #551A8b;
+    transition: all ease 0.5s;
+}
+
+
+
+/*Services*/
+#services{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    background: #161616;
+    
+}
+
+.s-heading{
+    padding: 100px 0px;
+}
+.s-heading h1{
+    color: #fff;
+}
+.s-heading p{
+    color: #fff;
+}
+.s-box{
+    background-color: #2b2b2b;
+    width: 350px;
+    height: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    position: relative;
+    transition: all ease 0.8s;
+}
+
+.s-b-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.s-b-img{
+    width: 100%;
+    height: fit-content;
+}
+.s-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.s-b-text{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-b-text a {
+    margin: 0px;
+    color: #ffffff;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: 4; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+.s-type{
+    color: #FFF;
+    background-color: #151414 !important;
+    font-family: 'Poppins', sans-serif; 
+    padding: 10px 15px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    
+}
+.s-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.8s;
+}
+
+
+/* Portfolio */
+
+#portfolio{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    padding: 60px 2% 20px 2%;
+    height: 100vh;
+}
+
+.p-heading {
+    text-align: center;
+    color: #551A8b;
+    padding: 100px 20px;
+}
+.p-box{
+    background-color: #1f1f1f1f;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 13px rgba(0,0,0,0.3);
+    position: relative;
+}
+.p-b-container{
+    width: 90%;
+    height: 30vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.text-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(89, 7, 197, 0.836);
+    display: none;
+  
+}
+.text-overlay h2,p{
+    color: #fff;
+}
+
+.text-overlay h2{
+    font-size: 2.2rem;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;;
+}
+.text-overlay p{
+    font-size: 16px;
+    margin: 0px;
+}
+.p-box:hover .text-overlay{
+    display: flex;
+}
+
+.p-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Contact Me*/
+
+#contact-btn h1{
+    font-size:2rem;
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 2px;
+    background: #161616;
+}
+#contact-btn{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #161616;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    box-shadow: 2px 0px 20px rgba(0,0,0,0.4);
+    text-align: center;
+}
+#contact-btn a{
+    color: #fff;
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    background-color: #1e1e1e;
+    box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#contact-btn a:hover{
+    background-color: #fff;  
+    color: #000;
+    transition: all ease 0.5s; 
+    font-weight: 700;
+}
+
+/*Progress Bar*/
+
+#skill{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.progress-bars{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 30px;
+}
+.progress-bar-container{
+    height: 25px;    
+   
+}
+.skill-heading h1{
+    color: #551A8b;
+}
+.progress-bar-container{
+    padding: 20px 10px;
+    margin: 10px 10px;
+    background-color:rgba(89, 7, 197, 0.836); 
+    border: 1px solid #0f0f0f;
+    display: inline-block;
+    width: 350px;
+   align-items: center;
+}
+
+@media (max-width: 1500px){
+    #main{
+        align-items: center;
+        background: none !important;    
+    }
+    .name{
+        left: 10%;
+        top:50%;
+        transform: translate(-10%, -50%);
+    }
+    #services{
+        height: auto;
+    }
+    .s-b-container{
+        flex-wrap: wrap;
+    }
+    .s-box{
+        flex-grow: 1;
+    }
+
+    .s-b-text{
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .p-b-container{
+        width: 100%;
+        height: 50vh;
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .toggle{
+        display: block;
+        margin-left: -155px;
+    }
+    .toggle:before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 0px;
+        margin-left: 25px;
+    }
+    .toggle.active:before{
+        content: '\f00d';
+    }
+    nav{
+        padding: 10px 30px;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        background-color: #0f0f0f;
+        top: 40px;
+        left: 0;
+        transition:0.5s;
+        overflow: hidden;
+        border: 3px solid #1f1f1f;
+        display: none !important;
+        align-items: center;
+    }
+    nav ul li a{
+        
+        width: 100%;
+        height: 30px;    
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 !important;
+        padding: 0px !important;
+        
+
+    }
+    .menu{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .menu li{
+        display: flex;
+    }
+
+    .active-menu{
+       display: block !important; 
+    }
+    
+}
+

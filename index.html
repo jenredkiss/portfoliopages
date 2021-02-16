@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" href="images/favicon.png">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5441db1c96.js" crossorigin="anonymous"></script>
+</head>  
+<body>
+<!---Main -->
+    <section id="main">
+     <!---Navigation-->
+        <nav>
+        <!---Logo-->
+            <a href="#" class="logo">Portfolio</a>
+            <!--bar icon-->
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li><a href="#main" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact-btn">Contact</a></li>
+            </ul>
+            <!--language-->
+            <a href="#" class="lang">En</a>      
+        </nav>
+
+        <!--Name-->
+        <div class="name">
+            <p>Hello</p>
+            <h1>
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Erick Estilloso.", "I am Creative.", "I Love to Design." ]'>
+                <span class="wrap"></span>
+                </a>
+            </h1>
+            <p class="details">As a designer, my desire is to create amazing, simple and new trends of website. Please do check out my work below and scan out my resume.
+            </p>
+            <a href="files/resume.pdf" target="_blank" class="cv-btn">Download CV</a>
+        </div>
+
+        <!--Social-->
+        <div class="social">
+            <a href="https://www.facebook.com/Plichoni" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/erickestilloso/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.behance.net/revestillo67c8" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://www.youtube.com/channel/UColLHWDa598pEBKE4sIH0AQ" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </section>    
+ 
+    <section id="services">
+        <div class="s-heading">
+            <h1>Services</h1>
+            <p>Here Is the Some Services</p>
+        </div>  
+        
+        <!-- Service box container -->
+        <div class="s-b-container">
+            <!-- box 1 -->
+            <div class="s-box">
+                <!-- services box img -->
+                <div class="s-b-img">
+                    <div class="s-type">Front-End</div>
+                    <img src="images/w1.jpg">
+                </div>
+                <!-- services box text -->
+                <div class="s-b-text">
+                    <a>Able to make website from PSD to coding.</a>
+                </div>
+            </div>
+             <!-- box 2 -->
+            <div class="s-box">
+                <!-- services box img -->
+                <div class="s-b-img">
+                    <div class="s-type">Web Design</div>
+                    <img src="images/w2.jpg">
+                </div>
+                <!-- services box text -->
+                <div class="s-b-text">
+                    <a>Creative thinking using Adobe Products such as Photoshop and Illustrator</a>
+                </div>
+            
+            </div>
+            <!-- box 3 -->
+            <div class="s-box">
+                <!-- services box img -->
+                <div class="s-b-img">
+                    <div class="s-type">SEO</div>
+                    <img src="images/w3.jpg">
+                </div>
+                <!-- services box text -->
+                <div class="s-b-text">
+                    <a>Can manage the websites SEO onpage or offpage of the website</a>
+                </div>          
+            </div>
+
+    </section>
+    <!--Portfolio Section-->
+    <section id="portfolio">
+        <h1 class="p-heading">Portfolio</h1>
+        <div class="p-b-container">
+            <div class="p-box">
+                <!--text-->
+                <a href="https://jenredkiss.github.io/shoespages/index.html" target="_blank">
+                    <div class="text-overlay">
+                        <h2>Shoes</h2>
+                        <p>Landing page</p>
+                    </div>
+                </a>
+                <!--img-->
+                <img src="images/w6.jpg" alt="portfolio">
+            </div>
+
+                <div class="p-box">
+                    <!--text-->
+                    <a href="https://jenredkiss.github.io/Musiko/index.html" target="_blank">
+                        <div class="text-overlay">
+                            <h2>Muziko</h2>
+                            <p>Landing Page</p>
+                        </div>
+                    </a>   
+                <!--img-->
+                <img src="images/w7.jpg" alt="portfolio">
+            </div>
+            <div class="p-box">
+                <!--text-->
+                <a href="https://jenredkiss.github.io/playstationpages/index.html" target="_blank">
+                    <div class="text-overlay">
+                        <h2>Playstation</h2>
+                        <p>Landing Page</p>
+                    </div>
+                </a>
+                <!--img-->
+                <img src="images/w8.jpg" alt="portfolio">
+            </div>
+            <div class="p-box">
+                <!--text-->
+                <a href="https://jenredkiss.github.io/coffeepages/" target="_blank">
+                    <div class="text-overlay">
+                        <h2>Coffee</h2>
+                        <p>Landing Page</p>
+                    </div>
+                 </a>
+                <!--img-->
+                <img src="images/w9.jpg" alt="portfolio">
+            </div>
+        </div>
+    </section> 
+     <!--contact btn-->
+    <section id="contact-btn">
+        <h1>
+            If you have any project in your mind?
+        </h1>
+        <a href="#">Contact Me</a>
+
+
+    </section>  
+    
+   
+   
+  
+ 
+
+<script type="text/javascript" src="js/Jquery.js"></script>
+<!-- For Change Bar Icon to x-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('nav ul').toggleClass('active-menu')
+        })
+    })
+</script>
+
+ <!--script for typewriting-->
+<script>
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>    
+
+
+</body>
+</html>
